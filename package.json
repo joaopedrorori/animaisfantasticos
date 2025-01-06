@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production --entry ./js/script.js -o ./main",
+    "dev": "webpack --mode development --watch --entry ./js/script.js -o ./main"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "eslint": "^9.17.0",
-    "globals": "^15.14.0"
+    "globals": "^15.14.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "lodash": "^4.17.21"
   }
 }
